@@ -1,0 +1,203 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+/* hide scroll bar x-scrollbar */
+.buttons-scroll::-webkit-scrollbar {
+    display: none;
+}
+
+@font-face {
+    font-family: 'Fellix-SemiBoldItalic';
+    src: url('/fonts/Fellix-SemiBoldItalic.eot');
+    src: local('/fonts/Fellix SemiBold Italic'), local('Fellix-SemiBoldItalic'),
+        url('/fonts/Fellix-SemiBoldItalic.eot?#iefix') format('embedded-opentype'),
+        url('/fonts/Fellix-SemiBoldItalic.woff2') format('woff2'),
+        url('/fonts/Fellix-SemiBoldItalic.woff') format('woff'),
+        url('/fonts/Fellix-SemiBoldItalic.ttf') format('truetype');
+    font-weight: 600;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Fellix-SemiBold';
+    src: url('/fonts/Fellix-SemiBold.eot');
+    src: local('/fonts/Fellix SemiBold'), local('Fellix-SemiBold'),
+        url('/fonts/Fellix-SemiBold.eot?#iefix') format('embedded-opentype'),
+        url('/fonts/Fellix-SemiBold.woff2') format('woff2'),
+        url('/fonts/Fellix-SemiBold.woff') format('woff'),
+        url('/fonts/Fellix-SemiBold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Fellix-Light';
+    src: url('/fonts/Fellix-Light.eot');
+    src: local('/fonts/Fellix Light'), local('Fellix-Light'),
+        url('/fonts/Fellix-Light.eot?#iefix') format('embedded-opentype'),
+        url('/fonts/Fellix-Light.woff2') format('woff2'),
+        url('/fonts/Fellix-Light.woff') format('woff'),
+        url('/fonts/Fellix-Light.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Fellix-Black';
+    src: url('/fonts/Fellix-Black.eot');
+    src: local('/fonts/Fellix Black'), local('Fellix-Black'),
+        url('/fonts/Fellix-Black.eot?#iefix') format('embedded-opentype'),
+        url('/fonts/Fellix-Black.woff2') format('woff2'),
+        url('/fonts/Fellix-Black.woff') format('woff'),
+        url('/fonts/Fellix-Black.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Fellix-BlackItalic';
+    src: url('/fonts/Fellix-BlackItalic.eot');
+    src: local('/fonts/Fellix Black Italic'), local('Fellix-BlackItalic'),
+        url('/fonts/Fellix-BlackItalic.eot?#iefix') format('embedded-opentype'),
+        url('/fonts/Fellix-BlackItalic.woff2') format('woff2'),
+        url('/fonts/Fellix-BlackItalic.woff') format('woff'),
+        url('/fonts/Fellix-BlackItalic.ttf') format('truetype');
+    font-weight: 900;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Fellix-ExtraBold';
+    src: url('/fonts/Fellix-ExtraBold.eot');
+    src: local('/fonts/Fellix ExtraBold'), local('Fellix-ExtraBold'),
+        url('/fonts/Fellix-ExtraBold.eot?#iefix') format('embedded-opentype'),
+        url('/fonts/Fellix-ExtraBold.woff2') format('woff2'),
+        url('/fonts/Fellix-ExtraBold.woff') format('woff'),
+        url('/fonts/Fellix-ExtraBold.ttf') format('truetype');
+    font-weight: 800;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Fellix-ThinItalic';
+    src: url('/fonts/Fellix-ThinItalic.eot');
+    src: local('/fonts/Fellix Thin Italic'), local('Fellix-ThinItalic'),
+        url('/fonts/Fellix-ThinItalic.eot?#iefix') format('embedded-opentype'),
+        url('/fonts/Fellix-ThinItalic.woff2') format('woff2'),
+        url('/fonts/Fellix-ThinItalic.woff') format('woff'),
+        url('/fonts/Fellix-ThinItalic.ttf') format('truetype');
+    font-weight: 100;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Fellix-Medium';
+    src: url('/fonts/Fellix-Medium.eot');
+    src: local('/fonts/Fellix Medium'), local('Fellix-Medium'),
+        url('/fonts/Fellix-Medium.eot?#iefix') format('embedded-opentype'),
+        url('/fonts/Fellix-Medium.woff2') format('woff2'),
+        url('/fonts/Fellix-Medium.woff') format('woff'),
+        url('/fonts/Fellix-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Fellix-LightItalic';
+    src: url('/fonts/Fellix-LightItalic.eot');
+    src: local('/fonts/Fellix Light Italic'), local('Fellix-LightItalic'),
+        url('/fonts/Fellix-LightItalic.eot?#iefix') format('embedded-opentype'),
+        url('/fonts/Fellix-LightItalic.woff2') format('woff2'),
+        url('/fonts/Fellix-LightItalic.woff') format('woff'),
+        url('/fonts/Fellix-LightItalic.ttf') format('truetype');
+    font-weight: 300;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Fellix-BoldItalic';
+    src: url('/fonts/Fellix-BoldItalic.eot');
+    src: local('/fonts/Fellix Bold Italic'), local('Fellix-BoldItalic'),
+        url('/fonts/Fellix-BoldItalic.eot?#iefix') format('embedded-opentype'),
+        url('/fonts/Fellix-BoldItalic.woff2') format('woff2'),
+        url('/fonts/Fellix-BoldItalic.woff') format('woff'),
+        url('/fonts/Fellix-BoldItalic.ttf') format('truetype');
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Fellix-Thin';
+    src: url('/fonts/Fellix-Thin.eot');
+    src: local('/fonts/Fellix Thin'), local('Fellix-Thin'),
+        url('/fonts/Fellix-Thin.eot?#iefix') format('embedded-opentype'),
+        url('/fonts/Fellix-Thin.woff2') format('woff2'),
+        url('/fonts/Fellix-Thin.woff') format('woff'),
+        url('/fonts/Fellix-Thin.ttf') format('truetype');
+    font-weight: 100;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Fellix-Regular';
+    src: url('/fonts/Fellix-Regular.eot');
+    src: local('/fonts/Fellix Regular'), local('Fellix-Regular'),
+        url('/fonts/Fellix-Regular.eot?#iefix') format('embedded-opentype'),
+        url('/fonts/Fellix-Regular.woff2') format('woff2'),
+        url('/fonts/Fellix-Regular.woff') format('woff'),
+        url('/fonts/Fellix-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Fellix-Bold';
+    src: url('/fonts/Fellix-Bold.eot');
+    src: local('/fonts/Fellix Bold'), local('Fellix-Bold'),
+        url('/fonts/Fellix-Bold.eot?#iefix') format('embedded-opentype'),
+        url('/fonts/Fellix-Bold.woff2') format('woff2'),
+        url('/fonts/Fellix-Bold.woff') format('woff'),
+        url('/fonts/Fellix-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Fellix-RegularItalic';
+    src: url('/fonts/Fellix-RegularItalic.eot');
+    src: local('/fonts/Fellix Regular Italic'), local('Fellix-RegularItalic'),
+        url('/fonts/Fellix-RegularItalic.eot?#iefix') format('embedded-opentype'),
+        url('/fonts/Fellix-RegularItalic.woff2') format('woff2'),
+        url('/fonts/Fellix-RegularItalic.woff') format('woff'),
+        url('/fonts/Fellix-RegularItalic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Fellix-ExtraBoldItalic';
+    src: url('/fonts/Fellix-ExtraBoldItalic.eot');
+    src: local('/fonts/Fellix ExtraBold Italic'), local('Fellix-ExtraBoldItalic'),
+        url('/fonts/Fellix-ExtraBoldItalic.eot?#iefix') format('embedded-opentype'),
+        url('/fonts/Fellix-ExtraBoldItalic.woff2') format('woff2'),
+        url('/fonts/Fellix-ExtraBoldItalic.woff') format('woff'),
+        url('/fonts/Fellix-ExtraBoldItalic.ttf') format('truetype');
+    font-weight: 800;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Fellix-MediumItalic';
+    src: url('/fonts/Fellix-MediumItalic.eot');
+    src: local('/fonts/Fellix Medium Italic'), local('Fellix-MediumItalic'),
+        url('/fonts/Fellix-MediumItalic.eot?#iefix') format('embedded-opentype'),
+        url('/fonts/Fellix-MediumItalic.woff2') format('woff2'),
+        url('/fonts/Fellix-MediumItalic.woff') format('woff'),
+        url('/fonts/Fellix-MediumItalic.ttf') format('truetype');
+
+    font-weight: 500;
+    font-style: italic;
+}
+
